@@ -2,6 +2,7 @@ import styled from "styled-components";
 import HomePage from "./pages/HomePage/HomePage.js";
 import SessionsPage from "./pages/SessionsPage/SessionsPage.js";
 import SeatsPage from "./pages/SeatsPage/SeatsPage.js";
+import SuccessPage from "./pages/SuccessPage/SuccessPage.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/sessoes/:idMovie" element={<SessionsPage />} />
                 <Route path="/assentos/:idSessao" element={<SeatsPage />} />
+                <Route path="/success" element={<SuccessPage/>} />
             </Routes>            
         </BrowserRouter>       
     )
