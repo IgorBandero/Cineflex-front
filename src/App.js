@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import HomePage from "./pages/HomePage/HomePage.js";
 import SessionsPage from "./pages/SessionsPage/SessionsPage.js";
+import SeatsPage from "./pages/SeatsPage/SeatsPage.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/sessoes/:idMovie" element={<SessionsPage />} />
+                <Route path="/assentos/:idSessao" element={<SeatsPage />} />
             </Routes>            
         </BrowserRouter>       
     )
