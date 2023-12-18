@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import HomePage from "./pages/HomePage/HomePage.js";
+import SessionsPage from "./pages/SessionsPage/SessionsPage.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
         <NavContainer>CINEFLEX</NavContainer>
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/sessoes/:idMovie" element={<SessionsPage />} />
             </Routes>            
         </BrowserRouter>       
     )
