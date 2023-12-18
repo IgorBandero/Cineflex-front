@@ -31,7 +31,7 @@ export default function SeatsPage() {
         requestSeats.catch(errorRequest => {
             console.log(errorRequest.response.data);
         });            
-    }, []); 
+    }, [API_URL]); 
 
     if (seatsList === null){
         return <> </>

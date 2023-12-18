@@ -27,7 +27,7 @@ export default function SessionsPage() {
             console.log(errorRequest.response.data);
         });
             
-    }, []); 
+    }, [API_URL]); 
 
     if (sessionsList === null){
         return <> </>
